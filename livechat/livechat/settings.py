@@ -70,6 +70,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'livechat.wsgi.application'
+ASGI_APPLICATION = 'livechat.asgi.application'
 
 
 # Database
