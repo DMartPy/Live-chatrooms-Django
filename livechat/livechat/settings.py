@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 
+from django.conf.global_settings import LOGIN_REDIRECT_URL, LOGIN_URL, LOGOUT_REDIRECT_URL
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,6 +28,10 @@ SECRET_KEY = 'django-insecure-j_3z+(%02ddr0mf7fz!_u(y=7y3k)zn!p$l!o4nwyoyyjhq3s(
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+LOGOUT_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/rooms/'
+LOGIN_URL = '/login/'
 
 
 # Application definition
